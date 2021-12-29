@@ -1,0 +1,44 @@
+.dignity {
+  padding: 70px 0;
+  text-align: center;
+  color: #333;
+  background-color: white;
+
+  &__inner {
+    width: 90%;
+  margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+  }
+  &-item {
+    img {
+      width: 30%;
+      margin: auto;
+    }
+
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 32px;
+      line-height: 42px;
+      font-weight: 400;
+    }
+
+    h4 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    p {
+      margin: 0 0 10
+px
+;
+    }
+
+  }
+  
+
+}

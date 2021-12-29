@@ -1,0 +1,20 @@
+.certificates {
+  padding: 100px 0;
+  background-color: white;
+
+  &__inner {
+    width: 90%;
+    margin: auto;
+  }
+
+  &__item {
+    img {
+      width: 100% !important;
+      object-fit: cover;
+    }
+  }
+
+  .slick-arrow {
+    display: none !important;
+  }
+}

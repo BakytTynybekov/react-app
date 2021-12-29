@@ -1,0 +1,42 @@
+.history {
+  padding: 100px 60px;
+  background-color: whitesmoke;
+  color: #333;
+
+  &-inner {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+  }
+
+  &-descr {
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+.row-item {
+
+  h3 {
+    color: #35BF8D;
+    font-weight: bold;
+    font-size: 135px;
+    margin-bottom: 0px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    line-height: 34px;
+  }
+  img {
+    width: 100%;
+    margin: auto;
+    object-fit: cover;
+  }
+
+} 

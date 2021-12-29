@@ -1,0 +1,11 @@
+export { default as Image1 } from "./image1.svg";
+export { default as Image2 } from "./image2.svg";
+export { default as Image3 } from "./image3.svg";
+export { default as Image4 } from "./image4.svg";
+export { default as Image5 } from "./image5.svg";
+export { default as Image6 } from "./image6.svg";
+export { default as Image7 } from "./image7.svg";
+export { default as Image8 } from "./image8.svg";
+export { default as Image9 } from "./image9.svg";
+export { default as Image10 } from "./image10.svg";
+export { default as Image11 } from "./image10.svg";
