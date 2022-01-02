@@ -1,13 +1,12 @@
 import React from "react";
 import "./App.scss";
-import Header from "./components/header/Header";
 import {
   Home,
   News,
   Clients,
   Cases,
   Contacts,
-  Layout
+  Layout,
 } from "./components/index";
 import { Routes, Route } from "react-router-dom";
 

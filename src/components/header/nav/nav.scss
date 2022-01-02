@@ -7,7 +7,6 @@
     list-style-type: none;
     font-size: 16px;
     color: #3a3a3a;
-    
   }
 
   &__menu-link {
@@ -19,6 +18,8 @@
     font-size: 16px;
     transition: 0.5s;
     font-family: "Roboto", sans-serif;
+    margin: 0;
+    cursor: pointer;
 
     &:hover {
       background-color: rgba(211, 211, 211, 0.3);
@@ -78,23 +79,22 @@
 @media screen and (max-width: 767px) {
   .nav {
     position: fixed;
-    background-color: rgba(255,255,255, 0.96);
+    background-color: rgba(255, 255, 255, 0.96);
     height: 100vh;
     width: 100%;
-  margin: auto;
-  text-align: center;
-  z-index: 100;
+    margin: auto;
+    text-align: center;
+    z-index: 100;
 
-  &__menu-link {
-    padding: 18px 0px;
-    font-size: 21px;
-    color: #3a3a3a;
+    &__menu-link {
+      padding: 18px 0px;
+      font-size: 21px;
+      color: #3a3a3a;
 
-    &:hover {
-      background-color: rgba(211, 211, 211, 0.5);
+      &:hover {
+        background-color: rgba(211, 211, 211, 0.5);
+      }
     }
-  }
-  
   }
   .header__contacts {
     margin-top: 27px;
@@ -112,6 +112,4 @@
       font-size: 20px;
     }
   }
-  
 }
-

@@ -29,18 +29,9 @@ export default class Certificates extends Component {
       cssEase: "linear",
       responsive: [
         {
-          breakpoint: 900,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true,
-          },
-        },
-        {
           breakpoint: 500,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
             dots: true,
@@ -64,7 +55,7 @@ export default class Certificates extends Component {
     ];
 
     const certificatesList = certificatesData.map((item, index) => (
-      <div className="certificates__item">
+      <div className="certificates__item" key={index}>
         <img src={item.img} alt="" />
       </div>
     ));

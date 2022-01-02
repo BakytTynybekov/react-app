@@ -9,7 +9,7 @@ export default class Cases extends Component {
   render() {
     let settings = {
       dots: true,
-      infinite: true,
+      infinite: false,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -38,42 +38,42 @@ export default class Cases extends Component {
 
     let casesData = [
       {
-        order: 1,
+        order: "01",
         img: "https://atfdigital.ru/assets/img/case/krutoy.png",
         descr: "Академия Игоря Крутого",
       },
       {
-        order: 2,
+        order: "02",
         img: "https://atfdigital.ru/assets/img/case/artreal.png",
         descr: "Art Real Estate",
       },
       {
-        order: 3,
+        order: "03",
         img: "https://atfdigital.ru/assets/img/case/citypizza.png",
         descr: "Сити пицца",
       },
       {
-        order: 4,
+        order: "04",
         img: "https://atfdigital.ru/assets/img/case/mgfoms.png",
         descr: "МГФОМС",
       },
       {
-        order: 5,
+        order: "05",
         img: "https://atfdigital.ru/assets/img/case/zebra.png",
         descr: "Зебра",
       },
       {
-        order: 6,
+        order: "06",
         img: "https://atfdigital.ru/assets/img/case/sssr.png",
         descr: "СССР",
       },
       {
-        order: 7,
+        order: "07",
         img: "https://atfdigital.ru/assets/img/case/abvg.png",
         descr: "АБВГДАЧА",
       },
       {
-        order: 8,
+        order: "08",
         img: "https://atfdigital.ru/assets/img/case/duma.png",
         descr: "Московская Дума",
       },

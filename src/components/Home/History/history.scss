@@ -1,6 +1,7 @@
 .history {
-  padding: 100px 60px;
-  background-color: whitesmoke;
+  padding: 70px 60px;
+  background-color: white;
+  filter: brightness(99%);
   color: #333;
 
   &-inner {
@@ -19,9 +20,8 @@
 }
 
 .row-item {
-
   h3 {
-    color: #35BF8D;
+    color: #35bf8d;
     font-weight: bold;
     font-size: 135px;
     margin-bottom: 0px;
@@ -38,5 +38,15 @@
     margin: auto;
     object-fit: cover;
   }
+}
 
-} 
+@media screen and (max-width: 990px) {
+  .history-inner {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+
+  .row-item {
+    margin-left: 100px;
+  }
+}

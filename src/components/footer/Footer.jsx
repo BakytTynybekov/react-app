@@ -2,10 +2,9 @@ import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./footer.scss";
 import {
-  faTelegram,
   faInstagram,
   faVk,
-  faFacebook
+  faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
@@ -32,13 +31,13 @@ function Footer() {
           </p>
           <div className="footer__socialMedia">
             <p>Наши соц сети:</p>
-            <a href="" className="social-media-icon">
+            <a href="/" className="social-media-icon">
               <FontAwesomeIcon icon={faVk} />
             </a>
-            <a href="" className="social-media-icon">
+            <a href="/" className="social-media-icon">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="" className="social-media-icon">
+            <a href="/" className="social-media-icon">
               <FontAwesomeIcon icon={faFacebook} />
             </a>
           </div>

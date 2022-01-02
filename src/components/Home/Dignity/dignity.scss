@@ -3,10 +3,11 @@
   text-align: center;
   color: #333;
   background-color: white;
+  filter: brightness(99.5%);
 
   &__inner {
     width: 90%;
-  margin: auto;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
@@ -33,12 +34,12 @@
     }
 
     p {
-      margin: 0 0 10
-px
-;
+      margin: 0 0 10 px;
     }
-
   }
-  
+}
 
+@media screen and (max-width: 778px) {
+  .dignity__inner {
+  }
 }

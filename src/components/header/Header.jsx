@@ -1,13 +1,11 @@
 import Location from "./location/Location";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgClose } from "react-icons/cg";
 
 import {
-  faTelegram,
   faInstagram,
   faVk,
-  faFacebook
+  faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 
 import "./header.scss";

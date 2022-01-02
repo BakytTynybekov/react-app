@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faTelegram } from "@fortawesome/free-brands-svg-icons";
 
-function Nav(props) {
+function Nav() {
   return (
     <nav className="nav">
       <ul className="nav__menu">
@@ -14,9 +14,7 @@ function Nav(props) {
           </NavLink>
         </li>
         <li className="nav__menu-item">
-          <a to="javascript:void(0)" className="nav__menu-link">
-            Услуги
-          </a>
+          <p className="nav__menu-link">Услуги</p>
         </li>
         <li className="nav__menu-item">
           <NavLink to="/cases" className="nav__menu-link">
