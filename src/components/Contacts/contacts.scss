@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.contacts {
+  padding: 70px;
+  text-align: center;
+  background: url("https://atfdigital.ru/assets/img/bg-figure.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h3 {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 400;
+  }
+
+  &__inner {
+    width: 60%;
+    margin: auto;
+  }
+}

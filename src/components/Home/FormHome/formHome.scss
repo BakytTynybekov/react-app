@@ -1,0 +1,39 @@
+.formHome {
+  background-image: url("https://atfdigital.ru/assets/img/bg-figure.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__item {
+    padding: 50px;
+    img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+      animation: pulse 0.9s ease-in-out infinite;
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .formHome__inner {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

@@ -39,7 +39,8 @@
   }
 }
 
-@media screen and (max-width: 778px) {
+@media screen and (max-width: 990px) {
   .dignity__inner {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
