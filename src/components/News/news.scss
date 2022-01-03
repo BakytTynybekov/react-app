@@ -1,0 +1,12 @@
+.news {
+  padding: 1em 0;
+
+  &__list {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
