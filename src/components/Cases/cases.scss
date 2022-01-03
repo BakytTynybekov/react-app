@@ -3,6 +3,8 @@
   text-align: center;
   background-color: white;
   filter: brightness(99%);
+  position: relative;
+  z-index: -1;
 
   &__inner {
     width: 80%;

@@ -3,4 +3,8 @@ export { default as Clients } from "./Clients/Clients";
 export { default as Contacts } from "./Contacts/Contacts";
 export { default as News } from "./News/News";
 export { default as Cases } from "./Cases/Cases";
+export { default as Smm } from "./Services/Smm/Smm";
+export { default as Ppc } from "./Services/Ppc/Ppc";
+export { default as Serm } from "./Services/Serm/Serm";
+export { default as Development } from "./Services/Development/Development";
 export { default as Layout } from "./Layout/Layout";

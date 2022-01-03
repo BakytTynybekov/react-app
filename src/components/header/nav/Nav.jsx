@@ -1,10 +1,11 @@
 import "./nav.scss";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { useState } from "react";
 import { faTelegram } from "@fortawesome/free-brands-svg-icons";
 
 function Nav() {
+  const [toggle, setToggle] = useState(false);
   return (
     <nav className="nav">
       <ul className="nav__menu">
@@ -13,8 +14,37 @@ function Nav() {
             Главная
           </NavLink>
         </li>
-        <li className="nav__menu-item">
-          <p className="nav__menu-link">Услуги</p>
+        <li
+          className="nav__menu-item nav__menu-services"
+          onClick={() => setToggle(!toggle)}
+        >
+          <p className="nav__menu-link">
+            Услуги <span>&#9658;</span>
+          </p>
+          {toggle && (
+            <ul className="nav__menu-services-inner">
+              <li className="nav__menu-item">
+                <NavLink to="/smm" className="nav__menu-link">
+                  SMM
+                </NavLink>
+              </li>
+              <li className="nav__menu-item">
+                <NavLink to="/ppc" className="nav__menu-link">
+                  PPC/SEO
+                </NavLink>
+              </li>
+              <li className="nav__menu-item">
+                <NavLink to="/serm" className="nav__menu-link">
+                  SERM
+                </NavLink>
+              </li>
+              <li className="nav__menu-item">
+                <NavLink to="/development" className="nav__menu-link">
+                  DEVELOPMENT
+                </NavLink>
+              </li>
+            </ul>
+          )}
         </li>
         <li className="nav__menu-item">
           <NavLink to="/cases" className="nav__menu-link">
