@@ -4,11 +4,13 @@
   color: #333;
   background-color: white;
   filter: brightness(99.5%);
-  position: relative;
-  z-index: -1;
+ 
 
   &__inner {
     width: 90%;
+    max-width: 1300px;
+    margin: auto;
+
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);

@@ -3,11 +3,13 @@
   background-color: white;
   filter: brightness(99%);
   color: #333;
-  position: relative;
-  z-index: -1;
+ 
 
   &-inner {
     display: grid;
+    max-width: 1300px;
+    margin: auto;
+
     grid-template-columns: 1fr 1.5fr;
   }
 
