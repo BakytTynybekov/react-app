@@ -1,0 +1,43 @@
+.increase {
+    background-color: white !important;
+    filter: brightness(99.3%);
+    height: 100%;
+    padding: 50px ;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  
+    &-title {
+      font-size: 46px;
+      font-weight: 800;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+  
+  
+    &__inner {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: center;
+      grid-gap: 50px;
+      padding: 50px 200px;
+   
+    }
+  
+    &__item {
+     
+  
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+  
+      p {
+        font-size: 16px;
+        margin-top: 40px;
+        font-weight: 600;
+        color: #3e3e3e;
+        margin: 20px  0 10px 0;
+      }
+    }
+  }
