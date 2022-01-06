@@ -4,7 +4,6 @@
   background-color: white;
   filter: brightness(99%);
 
-
   &__inner {
     width: 80%;
     max-width: 1100px;
@@ -13,10 +12,15 @@
 
   &__item {
     padding: 10px !important;
+    cursor: pointer;
 
     img {
       width: 100%;
       object-fit: cover;
+
+      &:hover {
+        transform: scale(0.9);
+      }
     }
 
     h4 {

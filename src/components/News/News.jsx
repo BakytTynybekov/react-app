@@ -13,7 +13,7 @@ function News() {
   useEffect(() => {
     const getNews = async () => {
       const res = await axios.get(
-        "https://newsapi.org/v2/everything?q=bitcoin&country=us&apiKey=e3760625ae3b4bf8bfd3adb5a98aeaec"
+        "https://newsapi.org/v2/top-headlines?country=ru&apiKey=e3760625ae3b4bf8bfd3adb5a98aeaec"
       );
       setNews(res.data.articles);
       console.log(res);
