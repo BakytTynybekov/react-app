@@ -14,13 +14,12 @@
       }
 
       &-inner {
-        position: absolute;
-        top: 0;
-        left: 101%;
+        display: grid !important;
         margin: 0;
         padding: 0;
         background-color: white !important;
-        z-index: 1;
+        z-index: 10000;
+        text-align: start;
       }
     }
   }
@@ -36,15 +35,17 @@
     line-height: 20px;
     color: #3a3a3a;
     text-decoration: none;
-    font-size: 16px;
-    transition: 0.5s;
+    font-size: 14px;
+    transition: 0.3s;
     font-family: "Roboto", sans-serif;
     margin: 0;
     cursor: pointer;
     z-index: 1000;
+    padding-left: 50px;
 
     &:hover {
-      background-color: rgba(211, 211, 211, 0.3);
+      background-color: #35bf8d !important;
+      color: white;
     }
   }
 }
@@ -106,7 +107,7 @@
     width: 100%;
     margin: auto;
     text-align: center;
-    z-index: 100;
+    z-index: 100000;
 
     &__menu-link {
       padding: 18px 0px;
@@ -130,14 +131,6 @@
 
     &-inner {
       position: static !important;
-      display: block !important;
-      margin: 0;
-      padding: 0;
-      background-color: white !important;
-      filter: brightness(99%);
-      z-index: 1;
-      text-align: start;
-      padding-left: 50px;
     }
   }
   .header__contacts {

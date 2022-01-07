@@ -14,7 +14,7 @@ function Home() {
       <Cases />
       <Dignity />
       <History />
-      <FormHome />
+      <FormHome title="Оставьте свою заявку и мы вам перезвоним" />
     </div>
   );
 }

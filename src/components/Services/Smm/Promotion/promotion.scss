@@ -1,60 +1,56 @@
 * {
-    box-sizing: border-box;
-  }
-  .promotion {
-    width: 100%;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
-    background-image: url("https://atfdigital.ru/assets/img/bg-figure.png");
-    background-position: left bottom;
+  box-sizing: border-box;
+}
+.promotion {
+  width: 100%;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  background-image: url("https://atfdigital.ru/assets/img/bg-figure.png");
+  background-position: left bottom;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
-    &__inner {
-      display: grid;
-      grid-template-columns: 1.5fr 1fr;
-      align-items: center;
-      height: 100vh;
-  
-  
-    }
-    
-  
-  
-    &__item {
-  
-      h2 {
-        font-size: 52px;
+  padding: 50px 0;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  &__item {
+    h2 {
+      font-size: 52px;
       margin-top: 0px;
       line-height: 1.25;
       margin-bottom: 10px;
       font-weight: 900;
-      }
-  
-      &-descr {
-        font-size: 24px;
-        line-height: 1.25;
-        font-weight: 300;
-        margin-top: 20px;
+    }
+
+    &-descr {
+      font-size: 24px;
+      line-height: 1.25;
+      font-weight: 300;
+      margin-top: 20px;
       margin-bottom: 10px;
-      font-family: 'Roboto', sans-serif;
-      }
-  
-      div {
-        margin-top: 40px;
-            font-size: 18px;
-            line-height: 1.25;
-            font-weight: 00;
-            margin-bottom: 20px;
-      }
-  
-      &-button {
-        display: inline-block;
-        width: fit-content;
-        font-size: 14px;
+      font-family: "Roboto", sans-serif;
+    }
+
+    div {
+      margin-top: 40px;
+      font-size: 18px;
+      line-height: 1.25;
+      font-weight: 00;
+      margin-bottom: 20px;
+    }
+
+    &-button {
+      display: inline-block;
+      width: fit-content;
+      font-size: 14px;
       padding: 15px 25px;
-      background: #35BF8D;
+      background: #35bf8d;
       color: white;
       border-radius: 3px;
       font-weight: 500;
@@ -62,19 +58,40 @@
       text-decoration: none;
       position: relative;
       font-weight: 700;
-  
+
       span {
         position: absolute;
         font-size: 2em;
         top: 6.7px;
         left: 170px;
       }
-      }
-      img {
-        width: 100%;
-        object-fit: cover;
-        animation: pulse 0.9s ease-in-out infinite;
-  
-      }
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      animation: pulse 0.9s ease-in-out infinite;
     }
   }
+}
+
+@media screen and (max-width: 900px) {
+  .promotion__inner {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+    h2 {
+      margin-top: 50px;
+      font-size: 40px;
+      font-weight: 600;
+    }
+  }
+  .promotion-imgPart {
+    display: flex;
+    justify-content: center;
+    order: -1;
+
+    img {
+      width: 70%;
+      margin: auto;
+    }
+  }
+}

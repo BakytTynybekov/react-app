@@ -17,9 +17,9 @@
 
   &__logo {
     margin: 50px auto;
-    background-color: #bfb6a4;
+    background-color: #35bf8d;
     color: white;
-    box-shadow: 0 0 1px #bfb6a4;
+    box-shadow: 0 0 1px #35bf8d;
     border-radius: 10px;
     width: fit-content;
     padding: 10px 10px;
@@ -124,15 +124,15 @@
   .logo-mobile h1 {
     display: block;
     margin: 5px 20px;
-    background-color: #bfb6a4;
+    background-color: #35bf8d;
     color: white;
-    box-shadow: 0 0 1px #bfb6a4;
+    box-shadow: 0 0 1px #35bf8d;
     border-radius: 10px;
     width: fit-content;
     padding: 10px 10px;
   }
   .hamburger {
-    position: absolute;
+    position: fixed;
     right: 2%;
     top: 15px;
     transition: ease-in-out 5s;

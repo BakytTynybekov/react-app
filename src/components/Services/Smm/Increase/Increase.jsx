@@ -1,24 +1,6 @@
 import "./increase.scss";
 
-function Increase() {
-  const increaseData = [
-    {
-      img: "https://atfdigital.ru/assets/img/smm/icon/2.png",
-      descr: "Узнаваемость бренда"
-    },
-    {
-      img: "https://atfdigital.ru/assets/img/smm/icon/2.png",
-      descr: "Количество подписчиков"
-    },
-    {
-      img: "https://atfdigital.ru/assets/img/smm/icon/3.png",
-      descr: "Активность профиля"
-    },
-    {
-      img: "https://atfdigital.ru/assets/img/smm/icon/4.png",
-      descr: "Трафик на сайт и продажи"
-    }
-  ];
+function Increase({ increaseData }) {
   return (
     <div className="increase">
       <div className="container">

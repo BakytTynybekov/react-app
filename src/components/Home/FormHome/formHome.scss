@@ -3,11 +3,11 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 
   &__inner {
-    max-width: 1300px;
+    max-width: 1170px;
     margin: auto;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
   }

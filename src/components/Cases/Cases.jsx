@@ -16,12 +16,13 @@ export default class Cases extends Component {
       cssEase: "linear",
       responsive: [
         {
-          breakpoint: 900,
+          breakpoint: 1100,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true,
             dots: true,
+            arrows: false,
           },
         },
         {
@@ -31,6 +32,7 @@ export default class Cases extends Component {
             slidesToScroll: 1,
             infinite: true,
             dots: true,
+            arrows: false,
           },
         },
       ],

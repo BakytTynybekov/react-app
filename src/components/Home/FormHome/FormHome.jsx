@@ -1,14 +1,12 @@
 import Form from "../../Contacts/form/Form";
 import "./formHome.scss";
 
-function FormHome() {
+function FormHome({ title }) {
   return (
     <div className="formHome">
       <div className="formHome__inner">
         <div className="formHome__item">
-          <h2 className="section-title">
-            Оставьте свою заявку и мы вам перезвоним
-          </h2>
+          <h2 className="section-title">{title}</h2>
           <Form />
         </div>
         <div className="formHome__item">

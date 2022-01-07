@@ -30,7 +30,7 @@ function News() {
 
   return (
     <section className="news">
-      <h2 className="section-title">News</h2>
+      <h2 className="section-title">Новости</h2>
       <div className="news__list">
         {currentNews.map((item, idx) => (
           <NewsItem

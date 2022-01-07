@@ -4,12 +4,43 @@ import Promotion from "./Promotion/Promotion";
 import Purpose from "./Purpose/Purpose";
 import "./smm.scss";
 import TabSection from "./Tab/TabSection";
+import Cases from "../../Cases/Cases";
+import FormHome from "../../Home/FormHome/FormHome";
+import PromotionOffer from "./PromotionOffer/PromotionOffer";
 
 function Smm() {
   return (
     <section className="smm">
-      <Promotion />
-      <Increase />
+      <Promotion
+        img="https://atfdigital.ru/assets/img/smm/hero-img.png"
+        title="КОМПЛЕКСНОЕ ПРОДВИЖЕНИЕ В СОЦИАЛЬНЫХ СЕТЯ"
+        descr="SMM для малого, среднего и крупного бизнеса с гарантией результатат - прописываем КРІ в договоре: цели, задачи, показатели"
+        aOffer={[
+          <strong>«Получите бесплатный аудит»</strong>,
+          <br />,
+          " анализ всех ваших социальных сетей",
+        ]}
+      />
+      <Increase
+        increaseData={[
+          {
+            img: "https://atfdigital.ru/assets/img/smm/icon/2.png",
+            descr: "Узнаваемость бренда",
+          },
+          {
+            img: "https://atfdigital.ru/assets/img/smm/icon/2.png",
+            descr: "Количество подписчиков",
+          },
+          {
+            img: "https://atfdigital.ru/assets/img/smm/icon/3.png",
+            descr: "Активность профиля",
+          },
+          {
+            img: "https://atfdigital.ru/assets/img/smm/icon/4.png",
+            descr: "Трафик на сайт и продажи",
+          },
+        ]}
+      />
       <Advantage
         mainClasses="advantages"
         classesForImgItem="advantages__item first-order"
@@ -24,7 +55,7 @@ function Smm() {
       <Advantage
         mainClasses="advantages profit"
         classesForImgItem="advantages__item second-order"
-        title="С ATF DIGITAL PRODUCTION ВЫ ПОЛУЧИТЕ ПРОФИТНЫЙ SMM"
+        title="С ORION PRODUCTION ВЫ ПОЛУЧИТЕ ПРОФИТНЫЙ SMM"
         img="https://atfdigital.ru/assets/img/smm/smile-man-1.png"
         firstAdvantage="Начнем со стратегии и создадим индивидуальный план развития с учетом специфики бренда."
         secondAdvantage="Внедрим проверенные методики, актуальные тренды, будем использовать только «белые» способы и дадим гарантию от блокировок."
@@ -32,37 +63,12 @@ function Smm() {
         fourthAdvantage="Запустим эффективуную для бизнеса: таргетинг, ретаргетинг, размещение у блогеров, рассылки."
         fifthAdvantage="Прописываем в договоре КРІ: показатели по подписчикам, охватам, продажам и прочим целям. Если не достигаем в указанные сроки - работаем бесплатно, пока не выполним КРІ."
       />
-      <Purpose
-        title={["В ЧЕМ ЦЕЛЬ ", <span>ORION</span>, " PRODUCTION"]}
-        descr="Мы – рекламное агентство полного цикла, команда которая фанатеет
-        своим делом и приносит реальные результаты для бизнеса засчет
-        экспертности и высокого качества SMM продвижения."
-        firstPurpose={[
-          <strong>Мы про:</strong>,
-          <br />,
-          "Креативные решения с учетом специфики бренда, а не однотипные задачи на потоке."
-        ]}
-        secondPurpose={[
-          <strong>На связи 24/7 </strong>,
-          <br />,
-          "Креативные решения с учетом специфики бренда, а не однотипные задачи на потоке."
-        ]}
-        thirdPurpose={[
-          <strong>Измеримые результат </strong>,
-          <br />,
-          "Полные и понятные отчеты о проделанной работе каждый месяц."
-        ]}
-        video="https://atfdigital.ru/assets/video/promo-video.webm"
-        experience={[<h3>11 лет</h3>, <p>опыта в SMM</p>]}
-        incr={[<h3>1.9 раз</h3>, <p>увеличиваем ROI в SMM, в среднем</p>]}
-        projects={[<h3>2174</h3>, <p>выполненных проектов</p>]}
-        instruments={[
-          <h3>84</h3>,
-          <p>разработанных инструментов для маркетинга</p>
-        ]}
-      />
+      <Purpose descr="SMM" projects="2174" />
 
-      <TabSection/>
+      <TabSection />
+      <Cases />
+      <FormHome title="ПОСТАВЬТЕ НАМ ЗАДАЧУ, И МЫ НАЙДЕМ РЕШЕНИЕ" />
+      <PromotionOffer />
     </section>
   );
 }
